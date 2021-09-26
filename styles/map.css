@@ -1,0 +1,126 @@
+.subContents {
+    width: 100%;
+    padding: 80px 0px 100px;
+    background-image: url(/imgs/common/subBg.jpg);
+    background-repeat: repeat-x;
+    border-top: 1px solid #b6b6b6;
+    color: #303030;
+}
+p{
+    text-align: center;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+table{
+    width:1000px;
+    margin: 0 auto;
+border-collapse: collapse;
+}
+table.mapBusan{
+    margin-top: 10px;
+}
+td,th{
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 10px;
+    color: #dbdbdb;
+}
+th{
+    background-color: rgb(63, 37, 66);
+    color: linen;
+}
+div iframe{
+    width: 1000px;
+  margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: #3e3b5f;
+}
+/* iframe {
+  
+} */
+p .busanLoca{
+    margin-top: 100px;
+}
+h1 {
+    background-color:rgb(63, 37, 66) ;
+    padding: 10px;
+    color: cornsilk;
+    padding-left: 100px;
+    
+    
+}
+h2 {
+    color: #dbdbdb;
+}
+
+em {
+    font-style: normal;
+  }
+
+/* 푸터 */
+.footer {
+    color: #dbdbdb;
+}
+
+  @media screen and (max-width:768px){
+
+    table{
+        width: auto;
+        height: fit-content;
+    }
+    p{
+        width: auto;
+        height: fit-content;
+ 
+    }
+    p.busanLoca{
+        width: auto;
+        height: fit-content;
+    }
+    iframe{
+        width: fit-content;
+        height: fit-content;
+    }
+@media screen and (max-width:1024px){
+    
+    table{
+        width: auto;
+        height: fit-content;
+    }
+    p{
+        width: auto;
+        height: fit-content;
+ 
+    }
+    p.busanLoca{
+        width: auto;
+        height: fit-content;
+    }
+    iframe{
+        width: fit-content;
+        height: fit-content;
+    }
+}
+/* 화면 너비 0 ~ 320px */
+@media (max-width: 320px) {
+    table{
+        width: 300px;
+        height: fit-content;
+    }
+    p{
+        width: auto;
+        height: fit-content;
+ 
+    }
+    p.busanLoca{
+        width: auto;
+        height: fit-content;
+    }
+    iframe {
+        width: 300px;
+        height: fit-content;
+    }
+}}

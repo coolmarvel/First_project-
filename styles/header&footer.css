@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+em {
+    font-style: normal;
+  }
+
+/* 푸터 */
+#footer {
+    border-top: 1px solid #dbdbdb;
+  }
+  .footer {text-align: center; padding: 30px 50px;} 
+  .footer li {position: relative; display: inline; padding: 0 7px 0 10px; white-space: nowrap;}
+  .footer li:before {content: ''; width: 1px; height: 12px; background-color: #dbdbdb; position: absolute; left: 0; top: 2px;}
+  .footer li:first-child:before {width: 0;}
+  .footer address {padding-top: 15px;}
+  .footer-font-color {color: #dbdbdb;}
+
+.container {
+    margin: 0px;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+header {
+    width: 100%;
+    height: 5vh;
+    background-color: #151535;
+    padding: 5px 0px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 헤더 왼쪽영역 */
+.logoImg a{
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+i{
+    font-size: 30px;
+    color: rgb(192, 124, 69);
+}
+
+/* 헤더 중간영역 */
+.menuList ,.rightMenu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menuList li, .rightMenu li{
+    padding: 15px 25px;
+    color: #fff;
+}
+.menu{
+    margin-left: 9%;
+}
+.more{
+    display: none;
+}
+.more.active {
+    display: block;
+}
+
+/* 헤더 오른쪽영역 */
+.rightMenu{
+    padding-right: 0px;
+}
+.rightMenu li i{
+    color: #fff;
+    font-size: 20px;
+}
+.menuList li:hover,
+.rightMenu li:hover{
+    background-color: rgb(192, 124, 69);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.toggleBtn i {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background-color: rgb(192, 124, 69);
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #151535;
+}
+
+/* 반응형 */
+@media screen and (max-width:1024px){
+    
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+    .toggleBtn i {
+        cursor: pointer;
+        display: block;
+    }
+    .menuList,
+    .rightMenu {
+    display: none;
+    }
+    .menuList.active,
+    .rightMenu.active {
+    display: block;
+    }
+    .menu{
+    margin-left: 0px;
+    }
+    .menuList.active li,
+    .rightMenu.active li
+    {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: inline-block;
+    }
+
+}
